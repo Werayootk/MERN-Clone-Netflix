@@ -1,0 +1,465 @@
+{
+	"info": {
+		"_postman_id": "d72cacde-b6a1-45a0-9006-f1fe010feccb",
+		"name": "netflix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMmQ5N2E1OWExNzE5NWJlOGFhNzZhZCIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2MzAzNzc5NDQsImV4cCI6MTYzMDgwOTk0NH0.LQDYtQIqJbZbKoPcULRY5tHytDdNAPzJNXVJhwe5xwg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"wedev.dev\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/api/users/612d97a59a17195be8aa76ad",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"users",
+						"612d97a59a17195be8aa76ad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer 123j313el12j3kl12j3kl",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"werayoot5800@gmail.com\",\r\n    \"password\" : \"wedev123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/api/auth/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"wedev11\",\r\n    \"email\" : \"werayoot5811@gmail.com\",\r\n    \"password\" : \"wedev123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/api/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete must be login admin",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMmQ5N2E1OWExNzE5NWJlOGFhNzZhZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMDM4MDg5MSwiZXhwIjoxNjMwODEyODkxfQ.k5z1EO3BeHQCskRndFo0eQTpN9_J7lhRZpv0LOY6Lis",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/api/users/612da2189a17195be8aa76c4",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"users",
+						"612da2189a17195be8aa76c4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get find by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8800/api/users/find/612da2139a17195be8aa76c2",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"users",
+						"find",
+						"612da2139a17195be8aa76c2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All users need Token",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMmQ5N2E1OWExNzE5NWJlOGFhNzZhZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMDM4MTM3MSwiZXhwIjoxNjMwODEzMzcxfQ.DwPnisJxiSl_o5BoJcNfJ4T0VVj-7OpeX9VJTxGw-Co",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8800/api/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users?new=true",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMmQ5N2E1OWExNzE5NWJlOGFhNzZhZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMDM4MTM3MSwiZXhwIjoxNjMwODEzMzcxfQ.DwPnisJxiSl_o5BoJcNfJ4T0VVj-7OpeX9VJTxGw-Co",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8800/api/users?new=true",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "new",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/api/users/stats",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMmQ5N2E1OWExNzE5NWJlOGFhNzZhZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMDM4MTM3MSwiZXhwIjoxNjMwODEzMzcxfQ.DwPnisJxiSl_o5BoJcNfJ4T0VVj-7OpeX9VJTxGw-Co",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8800/api/users/stats",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"users",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Created Movie with Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMmQ5N2E1OWExNzE5NWJlOGFhNzZhZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMDM4MTM3MSwiZXhwIjoxNjMwODEzMzcxfQ.DwPnisJxiSl_o5BoJcNfJ4T0VVj-7OpeX9VJTxGw-Co",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Flash 10\",\r\n    \"desc\" : \"test desc\",\r\n    \"img\" : \"https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500\",\r\n    \"imgTitle\": \"https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500\",\r\n    \"imgSm\" : \"https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500\",\r\n    \"trailer\": \"https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761\",\r\n    \"video\": \"https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761\",\r\n    \"year\": \"2000\",\r\n    \"limit\": 16,\r\n    \"genre\": \"comedy\",\r\n    \"isSeries\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/api/movies",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find movie id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMmQ5N2E1OWExNzE5NWJlOGFhNzZhZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMDM4MTM3MSwiZXhwIjoxNjMwODEzMzcxfQ.DwPnisJxiSl_o5BoJcNfJ4T0VVj-7OpeX9VJTxGw-Co",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8800/api/movies/find/612db7815efc356574ec7fb0",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"movies",
+						"find",
+						"612db7815efc356574ec7fb0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/api/movies/random?type=series",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMmQ5N2E1OWExNzE5NWJlOGFhNzZhZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMDM4MTM3MSwiZXhwIjoxNjMwODEzMzcxfQ.DwPnisJxiSl_o5BoJcNfJ4T0VVj-7OpeX9VJTxGw-Co",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8800/api/movies/random?type=series",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"movies",
+						"random"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "series"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all movies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMmQ5N2E1OWExNzE5NWJlOGFhNzZhZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMDM4MTM3MSwiZXhwIjoxNjMwODEzMzcxfQ.DwPnisJxiSl_o5BoJcNfJ4T0VVj-7OpeX9VJTxGw-Co",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8800/api/movies",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMmQ5N2E1OWExNzE5NWJlOGFhNzZhZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMDM4MTM3MSwiZXhwIjoxNjMwODEzMzcxfQ.DwPnisJxiSl_o5BoJcNfJ4T0VVj-7OpeX9VJTxGw-Co",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Awesome Comedy Series 5\",\r\n    \"type\" : \"series\",\r\n    \"genre\" : \"comedy\",\r\n    \"content\" : [\r\n        \"612db6c45efc356574ec7f98\",\r\n        \"612db6c45efc356574ec7f98\",\r\n        \"612db6c45efc356574ec7f98\",\r\n        \"612db6c45efc356574ec7f98\",\r\n        \"612db6c45efc356574ec7f98\",\r\n        \"612db6c45efc356574ec7f98\",\r\n        \"612db6c45efc356574ec7f98\",\r\n        \"612db6c45efc356574ec7f98\",\r\n        \"612db6c45efc356574ec7f98\",\r\n        \"612db6c45efc356574ec7f98\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/api/lists/",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"lists",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get lists",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMmQ5N2E1OWExNzE5NWJlOGFhNzZhZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMDM4MTM3MSwiZXhwIjoxNjMwODEzMzcxfQ.DwPnisJxiSl_o5BoJcNfJ4T0VVj-7OpeX9VJTxGw-Co",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8800/api/lists/",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"lists",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/api/lists?type=series",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMmQ5N2E1OWExNzE5NWJlOGFhNzZhZCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMDM4MTM3MSwiZXhwIjoxNjMwODEzMzcxfQ.DwPnisJxiSl_o5BoJcNfJ4T0VVj-7OpeX9VJTxGw-Co",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8800/api/lists?type=series",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "series"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
