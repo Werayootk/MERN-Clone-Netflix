@@ -1,4 +1,5 @@
 # MERN-Clone-Netflix
+[Live Demo](https://clone-netflix-wedev.herokuapp.com/)
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
