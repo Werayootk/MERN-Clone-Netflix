@@ -30,6 +30,12 @@
         font-size: 16px;
         font-weight: 500;
         cursor: pointer;
+        z-index: 10;
+      }
+
+      .loginButton:hover,
+      .loginButton:active {
+        box-shadow: 1px 3px red;
       }
     }
   }

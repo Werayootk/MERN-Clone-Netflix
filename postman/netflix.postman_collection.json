@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "d72cacde-b6a1-45a0-9006-f1fe010feccb",
+		"_postman_id": "92639909-fa77-48c5-8513-66bbff8a7852",
 		"name": "netflix",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -47,13 +47,13 @@
 				"header": [
 					{
 						"key": "token",
-						"value": "Bearer 123j313el12j3kl12j3kl",
+						"value": "Bearer 12312121",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\" : \"werayoot5800@gmail.com\",\r\n    \"password\" : \"wedev123456\"\r\n}",
+					"raw": "{\r\n    \"email\" : \"admin@gmail.com\",\r\n    \"password\" : \"admin\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -83,7 +83,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"wedev11\",\r\n    \"email\" : \"werayoot5811@gmail.com\",\r\n    \"password\" : \"wedev123456\"\r\n}",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"email\" : \"admin@gmail.com\",\r\n    \"password\" : \"admin\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
